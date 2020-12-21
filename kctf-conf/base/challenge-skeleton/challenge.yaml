@@ -1,0 +1,12 @@
+apiVersion: kctf.dev/v1alpha1
+kind: Challenge
+metadata:
+  name: mychal
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: false
+    dns: true
+  healthcheck:
+    enabled: true
