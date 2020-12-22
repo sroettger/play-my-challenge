@@ -12,4 +12,4 @@ It comes with all the important features:
 
 If you can get code execution, try to read `/home/user/flag`.
 
-![cyber cyber](pwngdb/screenshot.png?raw=true "Pwngdb")
+![cyber cyber](screenshot.png?raw=true "Pwngdb")
