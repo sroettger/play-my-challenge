@@ -7,12 +7,13 @@ spec:
   powDifficultySeconds: 0
   network:
     public: true
-    dns: false
+    dns: true
     ports:
       - protocol: "HTTPS"
         targetPort: 1337
   healthcheck:
     enabled: true
+    image: eu.gcr.io/kctf-challenges/gdb-as-a-service-healthcheck:70374203c152bdf2fcb0b63fa83a851f6fbbc1c2d8ffa3c853675240858553f9
   podTemplate:
     template:
       spec:
@@ -24,3 +25,4 @@ spec:
         volumes:
           - name: slash-tmp
             emptyDir: {}
+  image: eu.gcr.io/kctf-challenges/gdb-as-a-service:89873338fb5c80c994bf8a3182e8b73f3b102fb2bf13c56065e5d4db85751deb
